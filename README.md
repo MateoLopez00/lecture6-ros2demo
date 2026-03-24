@@ -71,12 +71,12 @@ graph LR
     TB3 -->|publish| ODOM
     ODOM -->|subscribe| SUB
     
-    style PUB fill:#90EE90
-    style SUB fill:#90EE90
-    style CMD fill:#FFD700
-    style ODOM fill:#FFD700
-    style TB3 fill:#87CEEB
-    style GAZ fill:#87CEEB
+    style PUB fill:#2ECC71,stroke:#27AE60,stroke-width:3px,color:#000
+    style SUB fill:#2ECC71,stroke:#27AE60,stroke-width:3px,color:#000
+    style CMD fill:#F39C12,stroke:#E67E22,stroke-width:3px,color:#000
+    style ODOM fill:#F39C12,stroke:#E67E22,stroke-width:3px,color:#000
+    style TB3 fill:#3498DB,stroke:#2980B9,stroke-width:3px,color:#FFF
+    style GAZ fill:#3498DB,stroke:#2980B9,stroke-width:3px,color:#FFF
 ```
 
 ### Package Development Workflow
@@ -102,10 +102,10 @@ flowchart TD
     H -->|Yes| J["Deploy & Test
     with TurtleBot3"]
     
-    style A fill:#FFE4B5
-    style E fill:#FFD700
-    style G fill:#90EE90
-    style J fill:#87CEEB
+    style A fill:#E74C3C,stroke:#C0392B,stroke-width:3px,color:#FFF
+    style E fill:#F39C12,stroke:#E67E22,stroke-width:3px,color:#000
+    style G fill:#2ECC71,stroke:#27AE60,stroke-width:3px,color:#000
+    style J fill:#3498DB,stroke:#2980B9,stroke-width:3px,color:#FFF
 ```
 
 ### Container Architecture
@@ -134,12 +134,13 @@ flowchart TB
     ROS <--> PKG
     PKG <--> TB3
     
-    style VSCODE fill:#007ACC
-    style ROS fill:#22314E
-    style GAZ fill:#F58113
-    style PKG fill:#90EE90
+    style VSCODE fill:#3498DB,stroke:#2980B9,stroke-width:3px,color:#FFF
+    style ROS fill:#9B59B6,stroke:#8E44AD,stroke-width:3px,color:#FFF
+    style GAZ fill:#E67E22,stroke:#D35400,stroke-width:3px,color:#FFF
+    style PKG fill:#2ECC71,stroke:#27AE60,stroke-width:3px,color:#000
+    style VNC fill:#34495E,stroke:#2C3E50,stroke-width:3px,color:#FFF
+    style BROWSER fill:#95A5A6,stroke:#7F8C8D,stroke-width:3px,color:#000
 ```
-
 
 ### Technology Stack
 
@@ -235,8 +236,8 @@ docker run hello-world
 ### Step 4: Clone This Repository
 
 ```bash
-git clone https://github.com/prakash-aryan/lecture6-ros2-demo.git
-cd lecture6-ros2-demo
+git clone https://github.com/prakash-aryan/lecture6-ros2demo.git
+cd lecture6-ros2demo
 ```
 
 ---
